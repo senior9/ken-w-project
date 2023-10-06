@@ -1,0 +1,201 @@
+*{
+    font-family: Roboto Flex;
+   
+}
+.main {
+    background: linear-gradient(180deg, #F6DA92 0%, rgba(217, 217, 217, 0.00) 100%);
+}
+.image-section{
+    max-width: 100%;
+    width: 100%;
+}
+.content{
+    background: #C8D9D9;
+}
+
+
+.main-timeline{
+    position: relative;
+    transition: all 0.4s ease 0s;
+}
+
+.main-timeline:before{
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: #000000;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.main-timeline .timeline{
+    position: relative;
+}
+
+.main-timeline .timeline:before,
+.main-timeline .timeline:after{
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.main-timeline .timeline-icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000000;
+    border: 2px solid #000000;
+    position: absolute;
+    top: 0;
+    left: 3px;
+    right: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main-timeline .timeline-content{
+    width: 45%;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: right;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+}
+
+.main-timeline .date{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    padding: 12px 33px;
+    background: #000000;
+    border-radius: 30px;
+}
+
+.main-timeline .title{
+    font-size: 24px;
+    font-weight: 500;
+    color: #5c5151;
+    margin-top: 30px;
+}
+
+.main-timeline .description{
+    font-size: 18px;
+    color: #606060;
+    line-height: 2;
+}
+
+.main-timeline .timeline-content.right{
+    float: right;
+    text-align: left;
+}
+
+@media only screen and (max-width: 767px){
+    .main-timeline:before{
+        left: 0;
+    }
+    .main-timeline .timeline-icon{
+        left: -8px;
+        margin: 0;
+    }
+    .main-timeline .timeline-content{
+        width: 90%;
+        float: right;
+    }
+}
+
+
+.slider-div {
+    background: #7B7979;
+}
+
+/* White divs with rounded corners */
+.slider-item {
+    width: 325px;
+    height: 325px;
+    background: white;
+    border-radius: 10px;
+    display: inline-block;
+    /* margin-right: 20px; */ /* Removed margin-right */
+    overflow: hidden; /* Hide text overflow */
+    text-align: center; /* Center-align text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-item p {
+    width: 269px; /* Set the width */
+    height: 231px; /* Set the height */
+    overflow: hidden; /* Hide text overflow */
+}
+/* Hide horizontal scrollbar for smooth scroll */
+.slider-container {
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+/* Keyframe animation for left-to-right scroll */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Apply animation to the slider-container for larger screens */
+@media screen and (min-width: 768px) {
+    .slider-container {
+        animation: slide 10s linear infinite; /* Adjust duration as needed */
+    }
+}
+
+/* Contact */
+
+.gradient-section {
+            background: linear-gradient(90deg, #F6DA92 50%, rgba(255, 237, 191, 0.00) 100%);
+            padding: 50px 0; /* Adjust the padding as needed */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Big text styles */
+        .big-text {
+            font-size: 36px; /* Adjust the font size as needed */
+            font-weight: bold;
+            color: #333; /* Text color */
+            margin-bottom: 20px; /* Add some space below the text */
+        }
+
+        /* Button styles */
+        .contact-button {
+            font-size: 20px; /* Adjust the font size as needed */
+        }
+
+    /* Footer */
+    .footer{
+        background: linear-gradient(-180deg, #000000 10%, rgba(217, 217, 217, 0.00) 100%);;
+    }
+    .footer {
+        color: white;
+        padding: 20px 0;
+    }
+
+    /* Icon styles */
+    .icon {
+        font-size: 24px;
+        margin-right: 20px;
+    }
+    .copywright{
+        background: linear-gradient(-180deg, rgba(217, 217, 217, 0.00) 0%, #F6DA92 100%);
+        padding: 20px 0;
+    }
